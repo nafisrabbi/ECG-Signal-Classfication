@@ -1,21 +1,58 @@
-# ECG-Signal-Classfication
-# Classification of ECG Signal using different types of classifier
-The project is primarily concerned with Random Forest and Neural Network. The work highlights that Random Forest performs better than any other classifier, including Support Vector Machine, Naive Bayes, Logistic Regression, and Decision Tree. In addition, it performs well when compared to neural networks.
+# ECG Signal Classification
 
-# Link: https://www.kaggle.com/datasets/shayanfazeli/heartbeat
-This dataset is composed of two collections of heartbeat signals derived from two famous datasets in heartbeat classification, the MIT-BIH Arrhythmia Dataset and The PTB Diagnostic ECG Database. The number of samples in both collections is large enough for training a deep neural network.
+This project focuses on the classification of Electrocardiogram (ECG) signals using machine learning techniques, with an emphasis on comparing the performance of various classifiers such as Random Forest and Neural Networks.
 
-This dataset has been used in exploring heartbeat classification using deep neural network architectures, and observing some of the capabilities of transfer learning on it. The signals correspond to electrocardiogram (ECG) shapes of heartbeats for the normal case and the cases affected by different arrhythmias and myocardial infarction. These signals are preprocessed and segmented, with each segment corresponding to a heartbeat.
-Content
-Arrhythmia Dataset
-Number of Samples: 109446
-Number of Categories: 5
-Sampling Frequency: 125Hz
-Data Source: Physionet's MIT-BIH Arrhythmia Dataset
-Classes: ['N': 0, 'S': 1, 'V': 2, 'F': 3, 'Q': 4]
-The PTB Diagnostic ECG Database
-Number of Samples: 14552
-Number of Categories: 2
-Sampling Frequency: 125Hz
-Data Source: Physionet's PTB Diagnostic Database
-Remark: All the samples are cropped, downsampled and padded with zeroes if necessary to the fixed dimension of 188.
+## Overview
+
+Electrocardiograms (ECGs) provide crucial information for diagnosing cardiac conditions. Accurate classification of ECG signals into categories such as normal or abnormal heartbeats is essential for healthcare applications. This project uses machine learning techniques to classify ECG signals effectively.
+
+## Dataset
+
+The dataset used in this project is derived from the following sources:
+- **MIT-BIH Arrhythmia Dataset**
+- **PTB Diagnostic ECG Database**
+
+It is available on Kaggle: [Heartbeat Dataset](https://www.kaggle.com/datasets/shayanfazeli/heartbeat).
+
+The dataset includes heartbeat signals labeled into classes, making it suitable for supervised learning tasks.
+
+## Classifiers Compared
+
+The project evaluates the performance of various machine learning classifiers:
+- **Support Vector Machine (SVM)**
+- **Naive Bayes**
+- **Logistic Regression**
+- **Decision Tree**
+- **Random Forest**
+- **Neural Networks**
+
+### Key Findings
+- Random Forest demonstrated superior performance compared to other classifiers.
+- Neural Networks also performed well, highlighting their suitability for signal processing tasks.
+
+## Project Structure
+
+- **Data**: Contains the ECG dataset and any preprocessed data files.
+- **Notebooks**: Jupyter notebooks showcasing data exploration, preprocessing, model training, and evaluation.
+- **Results**: Contains outputs such as model metrics, confusion matrices, and visualizations.
+
+## Methodology
+
+1. **Data Preprocessing**:
+   - Load and clean the ECG dataset.
+   - Normalize signal values to ensure consistency.
+   - Split data into training, validation, and testing sets.
+
+2. **Feature Extraction**:
+   - Extract meaningful features from ECG signals using signal processing techniques.
+   - Use statistical measures and domain-specific knowledge for feature engineering.
+
+3. **Model Training**:
+   - Train classifiers using extracted features.
+   - Use cross-validation to optimize hyperparameters.
+
+4. **Evaluation**:
+   - Evaluate models using metrics like accuracy, precision, recall, F1-score, and ROC-AUC.
+   - Compare the performance of different classifiers.
+
+
